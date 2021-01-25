@@ -1,0 +1,55 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can offer Dell Quick Answer, or guide you to the Dell Helpdesk", "I can provide frequently asked questions-answers"],
+         "context": [""]
+        },
+        {"tag": "password",
+         "patterns": ["What if i forget password?", "admin password", "reset password", "find password back"],
+         "responses": ["Try remember it, if you cannot, we cannot help you neither : ("],
+         "context": [""]
+        },
+        {"tag": "internet_issue",
+         "patterns": ["No connection to the server", "cannot open web browser", "cannot open youtube", "no access to dell emails"],
+         "responses": ["make sure you connected Dell VPN before try access anything internal"],
+         "context": [""]
+        },
+        {"tag": "software_crush",
+         "patterns": ["Microsoft team crushed", "Dell HR froze", "click without responses"],
+         "responses": ["try restart computer, try restart the program, try restart VM"],
+         "context": [""]
+        },
+
+        {"tag": "dell_helpdesk",
+         "patterns": ["Find me a representitive", "I need a real person", "helpdesk", "phone number"],
+         "responses": ["Please provide your name"],
+         "context": ["search_representative"]
+        },
+        {"tag": "search_representative",
+         "patterns": [],
+         "responses": ["Please wait for an representative or contact ----"],
+         "context": [""]
+        }
+        
+   ]
+}
